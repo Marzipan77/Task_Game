@@ -1,42 +1,49 @@
-/* Ensure everything in the container is centered vertically and horizontally */
+/* For the body and container */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('images/backround.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Full viewport height */
-    text-align: center;
-    padding: 20px;
-    background-color: #ffffff; /* Optional background color */
-  }
-  
-  .logo {
-    width: 400px; /* Adjust the width */
-    height: 400px; /* Maintain the aspect ratio */
-  }
-  
-  h1 {
-    font-family: "Henny Penny", system-ui;
-    font-size: 46px;
-    margin-bottom: 20px; /* Space between text and button */
-  }
-  
-  .start-button {
-    background-color: #c5b9a0; /* Stone-like color */
-    border: none;
-    border-radius: 10px; /* Slightly round the corners */
-    padding: 20px 40px;
-    font-size: 24px;
-    color: #ffffff;
-    font-weight: bold;
-    box-shadow: 0 8px #999; /* Add depth */
-    text-shadow: 2px 2px #444; /* Text shadow for a carved effect */
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  
-  .start-button:active {
-    transform: translateY(4px); /* Button press effect */
-    box-shadow: 0 4px #666;
-  }
-  
+  position: relative; /* Ensures button is positioned relative to this container */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.start-button {
+  font-family: 'Henny Penny', cursive;
+  background-color: #c5b9a0;
+  border: none;
+  border-radius: 30px;
+  padding: 5px 30px;
+  font-size: 70px;
+  margin-top: 50% ;
+  color: #ffffff;
+  font-weight: bold;
+  box-shadow: 0 8px #999;
+  text-shadow: 2px 2px #444;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.start-button:active {
+  transform: translateY(4px);
+  box-shadow: 0 4px #666;
+}
+
+
+/* Hover effect for the button */
+.start-button:hover {
+  background-color: #b5a08e; /* Darker shade on hover */
+  box-shadow: 0 8px #777; /* Subtle shadow on hover */
+  transform: scale(1.05); /* Slight enlargement */
+}
