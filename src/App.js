@@ -1,9 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './styles.css'; // Import your styles
+import './styles.css'; 
 
 const App = () => {
-  const navigate = useNavigate(); // Initialize the navigate function
+  const navigate = useNavigate(); 
 
   const handleStart = () => {
     console.log('Start button clicked');
